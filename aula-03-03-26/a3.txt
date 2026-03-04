@@ -1,0 +1,16 @@
+programa {
+  funcao inicio() {
+    cadeia nome
+    real s, s0
+
+    escreva("qual o seu nome: ")
+    leia(nome)
+
+    escreva("Qual o salario: ")
+    leia(s)
+    
+    s0= (s*15)/100
+    s= s0 + s
+    escreva(nome,"deve receber aproximadamente um bonus de ",s0, ", totalizando o salario todo ", s)
+  }
+}

@@ -1,17 +1,18 @@
 programa {
   funcao inicio() {
-    real n1, n2, n3
-    para(inteiro i= 1; i<=2 ; i++){
+    inteiro i
+    para(inteiro n= 1; n<=75 ; n++){
       escreva("qual a sua idade: ")
-      leia(n1)
-      se(n1<=17){
-        escreva("menor de idade é proibido \n")
+      leia(i)
+      se(i<=17){
+        escreva("menor de idade \n")
       }
-      senao se(n1 <= n2){
-        n2= n1
-        
+      senao se(i >= 18 e i<=59){
+        escreva ("maior de idade \n")
+      }
+      senao{
+        escreva("Idoso \n")
       }
     }
-    escreva(n2, "é a menor idademenor")
   }
 }
